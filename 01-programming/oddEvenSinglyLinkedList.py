@@ -67,6 +67,8 @@ def node2list(node):
 #
 
 def oddEvenList(l):
+    if not l or not l.next:
+        return l
     odd = l
     even = even_h = l.next
     while odd.next and even.next:
